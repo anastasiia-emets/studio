@@ -1,0 +1,60 @@
+@import "_variable";
+
+
+
+@import "../componets/info-container/info-container";
+@import "../componets/info/info";
+@import "../componets/footer/footer";
+@import "../componets/info-section/info-section";
+@import "../componets/header/header";
+@import "../componets/main-block/main-block";
+@import "../componets/about-team/about-team";
+@import "adap";
+
+body{
+	background:white;
+
+	
+	}
+body,html {
+	
+		min-height: 100%;
+}
+
+*{
+margin:0;
+	box-sizing:border-box;
+}
+html {
+    min-height: 100%; 
+}
+body {
+    min-height: 100%; 
+}
+
+
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background: url(../images/button.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	width: 44px;
+	height: 44px;
+	transition: .3s ease-in-out;
+  }
+  
+  #myBtn:hover {
+		transform: scale(1.5);
+  }
+
+
