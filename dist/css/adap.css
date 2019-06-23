@@ -70,8 +70,9 @@
     padding-left: 22px;
     font-weight: 700;
   }
-  .info-container-item1 {
+  .main-block-text__description {
     margin-left: 0;
+    padding-right: 0;
   }
   .footer__logo {
     display: none;
@@ -326,6 +327,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .main-block-item1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .info-container-item1 {
     margin-left: 0;
     margin-right: 0;
@@ -390,7 +397,8 @@
   .info-section__description {
     font-size: 26px;
   }
-  .info-container-item {
+  .info-container-item,
+  .info-container-item1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

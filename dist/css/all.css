@@ -72,7 +72,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 170px;
+  margin-left: 150px;
   margin-top: -250px;
 }
 
@@ -199,6 +199,7 @@
   text-transform: uppercase;
   border: 0;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .info__button-active:hover {
@@ -372,6 +373,7 @@
   text-transform: uppercase;
   margin-right: 20px;
   font-family: "Raleway", sans-serif;
+  cursor: pointer;
 }
 
 .info-section__button-active:hover {
@@ -389,6 +391,7 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 38px;
+  cursor: pointer;
   text-transform: uppercase;
   background: #2c2e37;
   font-family: "Raleway", sans-serif;
@@ -487,6 +490,7 @@
   text-transform: uppercase;
   margin-bottom: 33px;
   padding-left: 10px;
+  cursor: pointer;
 }
 
 .header__button:hover {
@@ -635,6 +639,7 @@
   text-transform: uppercase;
   border: 0;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .main-block__button-active:hover {
@@ -655,12 +660,14 @@
   line-height: 40px;
   text-transform: uppercase;
   background: white;
+  cursor: pointer;
 }
 
 .main-block__button-disactive:hover {
   background-color: grey;
   -webkit-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
+  color: black;
 }
 
 .main-block-item-2 {
@@ -857,8 +864,9 @@
     padding-left: 22px;
     font-weight: 700;
   }
-  .info-container-item1 {
+  .main-block-text__description {
     margin-left: 0;
+    padding-right: 0;
   }
   .footer__logo {
     display: none;
@@ -1113,6 +1121,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .main-block-item1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .info-container-item1 {
     margin-left: 0;
     margin-right: 0;
@@ -1177,7 +1191,8 @@
   .info-section__description {
     font-size: 26px;
   }
-  .info-container-item {
+  .info-container-item,
+  .info-container-item1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1211,7 +1226,8 @@ body {
   background: white;
 }
 
-body, html {
+body,
+html {
   min-height: 100%;
 }
 
@@ -1245,8 +1261,8 @@ body {
   cursor: pointer;
   width: 44px;
   height: 44px;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 #myBtn:hover {
